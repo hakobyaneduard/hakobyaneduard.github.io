@@ -1,0 +1,358 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "MuseoSansCyrl", "Natasha", Tahoma, sans-serif;
+}
+div, ul, li, p, h1, h2, a, img, nav, h3{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* It is all for header --1 part-- */
+.header{
+    background: #222c1f url(../img/header-bg.jpg) center top / cover;
+    height: 848px;
+}
+.container{
+    width: 950px;
+    margin: 0px auto;
+}
+.header-top{
+    padding-top: 45px;
+    width: 100%;
+    
+}
+.container-logo{
+    float: left;
+    margin-right: 178px;
+}
+.logo{
+    font-size: 17px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+.logo:hover{
+    color: lightgray;
+}
+.logo-text-bold{
+    font-weight: 900;
+}
+.header-navigation{
+    float: left;
+    margin-right: 160px;
+}
+.navigaiton-list{
+    font-family: "Museo Sans Cyrl";
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.navigation-item{
+    float: left;
+    margin-right: 50px;
+}
+.navigation-item:last-child{
+    margin-right: 0px;
+}
+.navigation-item-link{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+.navigation-item-link:hover{
+    color: lightgray;
+}
+.header-contact{
+    float: right;
+    /* margin-left: 160px; */
+}
+.contact-link{
+    font-family: "Museo Sans Cyrl";
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;    
+}
+.contact-link:hover{
+    color: lightgray;
+}
+.header-caption{
+    font-family: "Museo Sans Cyrl";
+    font-weight: 100;
+    color: #fff;
+    font-size: 29px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 298px;
+    text-align: center;
+}
+.header-caption-bold{
+    font-family: "Natasha";
+    font-size: 49px;
+}
+.header-bottom-block{
+    margin-top: 265px;
+    /* padding-left: 50%;
+    padding-right: 50%; */
+}
+.header-bottom{
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 265px;
+    margin: 0px auto;
+}
+.header-bottom:hover{
+    border-color: lightgray;
+}
+/* It is all for section --2 part-- */
+.about-me-caption{
+    font-size: 37px;
+    font-family: "Natasha";
+    font-size: 37px;
+    font-family: "Natasha";
+    color: rgb(34, 36, 27);
+    text-transform: uppercase;
+    text-align: left;   
+    letter-spacing: 3px;
+    margin-top: 86px;
+    margin-bottom: 76px;
+}
+.background{
+    float: left;
+}
+.background-caption{
+    margin-bottom: 46px;
+}
+.merit-caption{
+    font-size: 22px;
+    font-family: "Natasha";
+    color: rgba(34, 36, 27, 0.66);
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.background-text{
+    font-size: 15px;
+    font-family: "Museo Sans Cyrl";
+    color: #22241b;
+    font-weight: 300;
+    width: 432px;
+    /* height: 393px; */
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+.background-text:last-child{
+    margin-bottom: 0px;
+}
+.merit-and-contact{
+    float: right;
+}
+.merit-caption-special{
+    margin-bottom: 46px;
+}
+.merit-list-item{
+    background: url(../img/rectangle.png) no-repeat;
+    height: 103px;
+    width: 105px;
+    line-height: 103px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(32, 77, 21);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    float: left;
+    margin-right: 45px;
+}
+.merit-list-item:last-child{
+    margin-right: 0px;
+}
+.merit-text{
+    font-size: 12px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(34, 36, 27);
+    text-transform: uppercase;
+    text-align: center;
+    width: 105px;
+    height: auto;   
+    margin-top: 15px;
+    line-height: 20px;
+}
+.contact-caption{
+    margin-top: 30px;
+}
+.contact-list{
+    margin-top: 20px;
+    float: left;
+
+}
+.contact-item{
+    margin-top: 10px;
+
+}
+.contact-item-link{
+    font-size: 14px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(32, 77, 21);
+    font-weight: 300;
+}
+.contact-item-link:hover{
+    color: rgb(52, 143, 10);
+}
+.contact-with-write{
+    float: right;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.write-item{
+    border-radius: 50%;
+    background-color: #eef1ed;
+    /* opacity: 0.078; */
+    width: 64px;
+    height: 64px; 
+    text-align: center;
+    padding-top: 16px;
+    float: left;
+
+}
+.write-text{
+    font-size: 14px;
+    font-family: "Museo Sans Cyrl";
+    color: rgba(34, 36, 27, 0.722);
+    font-weight: 300;
+    font-style: italic;
+    float: right;
+    margin-left: 15px;
+    padding-top: 18px;
+}
+
+/* It is all for section --3 part-- */
+
+.skills-caption{
+    font-size: 37px;
+    font-family: "Natasha";
+    color: rgb(34, 36, 27);
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 90px;    
+    margin-bottom: 65px;
+    letter-spacing: 3px;
+}
+.skills-list{
+    margin: 0px auto;
+}
+
+.skills-item{
+    background: url(../img/skill-around.png) no-repeat;
+    /* background-position: center center; */
+    width: 61px;
+    height: 61px;
+    text-align: center;
+    line-height: 61px;
+    font-size: 13px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(32, 77, 21);
+    text-transform: uppercase; 
+    float: left;
+    margin-right: 26px;
+}
+.skills-item-text{
+    line-height: auto;
+    text-align: auto;
+    font-size: 15px;
+    font-family: "Museo Sans Cyrl";
+    color: rgba(34, 36, 27, 0.89);
+    text-transform: uppercase;
+    font-weight: 900; 
+    float: left;
+    padding-top: 21px;
+    margin-right: 100px;
+}
+.skills-item:last-child{
+    float: right;
+}
+.skills-item-text:last-child{
+    float: right;
+    margin-right: 0px;
+}
+
+/* It is all for section --4 part-- */
+.works-caption{
+    margin-top: 83px;
+    font-size: 37px;
+    font-family: "Natasha";
+    color: rgb(34, 36, 27);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+}
+.works-item{
+    position: relative;
+    width: 300px;
+    height: 299px;
+    float: left;
+    margin-right: 20px;
+}
+.works-item:last-child{
+    margin-right: 0px;
+}
+.works-picture{
+    width: 100%;
+    height: 100%;
+}
+.works-item-effect{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 130px;  
+    opacity: 0;
+    font-size: 15px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.works-item-link{
+    font-size: 12px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-transform: none;
+}
+.works-item-effect:hover{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+.footer-text{
+    font-size: 11px;
+    font-family: "Museo Sans Cyrl";
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(34, 36, 27, 0.659);
+}
+.container-footer{
+    margin-top: 123px;
+    margin-bottom: 110px;
+}
