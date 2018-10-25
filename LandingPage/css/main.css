@@ -1,0 +1,43 @@
+.header {
+  padding: 15px 0px;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-height: 61px;
+}
+
+.contacts .contacts__number {
+  font-size: 22px;
+}
+
+.contacts .contacts__number:first-child {
+  padding-right: 15px;
+  margin-right: 14px;
+  border-right: 1px solid #cfcfd0;
+}
+
+.contacts .contacts__order-call {
+  margin-left: 37px;
+}
+
+.contacts .contacts__order-call img {
+  padding-right: 5px;
+}
+
+.contacts .contacts__order-call a {
+  text-decoration: none;
+  vertical-align: middle;
+}

@@ -1,0 +1,34 @@
+@import url("../css/style.css");
+
+@media screen and (max-width: 991px){
+    .produce__boxes {
+        display: none;
+    }
+
+    .order__call {
+        display: block;
+    }
+
+    .produce {
+        padding: 0px;
+    }
+    
+    .header-link{
+        display: block;
+
+    }
+    
+    .header-link img{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contacts__number{
+        padding: 0px;
+    }
+
+}
