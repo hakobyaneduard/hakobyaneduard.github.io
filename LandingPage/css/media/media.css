@@ -3,6 +3,7 @@
 @media screen and (max-width: 991px){
     .produce{
         text-align: center;
+        padding-top: 30vh;
     }
 
     .produce__boxes {
@@ -37,9 +38,21 @@
         margin-left: 0px;
     }
 
+    .feedback__block{
+        display: none;
+    }
+
+    .feedback{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 576px){
+	.produce{
+        text-align: center;
+        padding-top: 42vh;
+    }
 
     .produce__form .form-tel {
         width: 100%;

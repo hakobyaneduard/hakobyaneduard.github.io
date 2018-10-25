@@ -85,7 +85,7 @@ iframe {
   background: url(../img/produce-bg.jpg) center;
   background-size: cover;
   position: relative;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 .produce .produce__boxes img {
