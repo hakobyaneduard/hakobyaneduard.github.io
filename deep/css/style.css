@@ -87,6 +87,10 @@ a:hover {
   color: #00d17e;
 }
 
+.header #burger-checkbox {
+  display: none;
+}
+
 .video {
   padding-top: 8px;
 }

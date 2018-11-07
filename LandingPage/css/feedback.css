@@ -1,0 +1,67 @@
+.feedback {
+  background: #030303;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.feedback .feedback__block {
+  text-align: center;
+  font-size: 38px;
+}
+
+.feedback .feedback__block-2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.feedback .feedback__human {
+  text-align: center;
+  padding: 0px 60px;
+  padding-bottom: 40px;
+}
+
+.feedback .feedback__human .feedback__face {
+  height: 150px;
+}
+
+.feedback .feedback__human .feedback__disc {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.feedback .feedback__human:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.feedback .feedback__find {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.feedback .feedback__find .feedback__find-us {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.feedback .feedback__social {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.feedback .feedback__social .feedback__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 153px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.feedback .feedback__social .social-icon {
+  margin-right: 13px;
+}
