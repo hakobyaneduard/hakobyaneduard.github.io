@@ -31,6 +31,14 @@ a:hover {
   margin-right: 0px;
 }
 
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 12px;
+  height: 12px;
+  border-radius: 20%;
+  background: #fff;
+  border: 1px solid #000;
+}
+
 .li__change-bg:hover {
   background: #ec154b;
   color: #fff;
