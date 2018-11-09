@@ -59,6 +59,27 @@
         display: none;
     }
 
+    .focus__icon-block{
+        margin-bottom: 20px;
+    }
+
+    .footer .footer_2-social{
+        padding-top: 20px
+    }
+
+    .story .about__bg-people:after{
+        padding-top: 0px;
+        font-size: 2rem;
+        width: 27%
+    }
+    
+    .portfolio__disc .portfolio__text-black{
+        width: 100%;
+    }
+
+    .projects .projects__caption{
+        width: 100%;
+    }
 
 }
 
@@ -90,7 +111,7 @@
         position: absolute;
         height: 2px;
         width: 20px;
-        background: #000;
+        background: #fff;
 
     }
     .burger__line::before,
@@ -118,7 +139,7 @@
 
     #burger-checkbox:checked + .label  span:after {
         transform: rotate(-45deg);
-        background: #000000;
+        background: #fff;
     }
 
     #burger-checkbox:checked + .label .burger__line {
@@ -127,7 +148,7 @@
 
     #burger-checkbox:checked + .label  span:before {
         transform: rotate(45deg);
-        background: #000000;
+        background: #fff;
     }
 
     #burger-checkbox:checked ~ .header__nav-list{
@@ -158,10 +179,27 @@
     }
 
     .footer .footer__address{
-        font-size: 10px
+        font-size: 10px;
     }
 
+    .background .background__text{
+        font-size: 2rem;
+    }
 
+    .background .background__block{
+        align-items: center;
+    }
+
+    .story .story__disc{
+        font-size: 1.5rem
+    }
+
+    .story .about__bg-people{
+        display: none;
+    }
+    .story-caption .story__caption{
+        display: none;
+    }
 
 
 }
