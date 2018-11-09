@@ -39,6 +39,11 @@ a:hover {
   border: 1px solid #000;
 }
 
+.container__fluids-margin {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .li__change-bg:hover {
   background: #ec154b;
   color: #fff;
