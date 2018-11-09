@@ -26,6 +26,11 @@ a:hover {
   margin: 0px auto;
 }
 
+.row__margin-left {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .li__change-bg:hover {
   background: #ec154b;
   color: #fff;
