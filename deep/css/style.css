@@ -62,17 +62,6 @@ a:hover {
   margin-top: 15px;
 }
 
-.video__text::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  background: #000;
-  margin-top: 5px;
-  -webkit-transform: translateX(-115%);
-  transform: translateX(-115%);
-}
-
 .social-icon-img:hover {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
@@ -176,7 +165,7 @@ a:hover {
   margin-top: 15px;
 }
 
-.video .video__text::before {
+.video__text::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -584,12 +573,12 @@ a:hover {
 .story .story__disc:before {
   content: '';
   position: absolute;
-  width: 100px;
+  width: 100%;
   height: 175px;
   background: #000;
   margin-top: 10px;
-  -webkit-transform: translateX(-115%);
-  transform: translateX(-115%);
+  -webkit-transform: translateX(-101%);
+  transform: translateX(-101%);
 }
 
 .story .story__about-caption {
