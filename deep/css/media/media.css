@@ -55,10 +55,6 @@
         display: none;
     }
 
-    .video .video__text::before{
-        display: none;
-    }
-
     .focus__icon-block{
         margin-bottom: 20px;
     }
