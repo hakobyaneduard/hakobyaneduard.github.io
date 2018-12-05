@@ -1,0 +1,541 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.link {
+    display: block;
+}
+
+.banner {
+    position: relative;
+    background: #fff;
+    height: 120px;
+    overflow: hidden;
+}
+
+.baner__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 900px;
+    background-image: url(../img/background.png);
+    background-size: contain;
+    animation: mainBackground 50s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mainBackground {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+.banner__logo{
+    position: absolute;
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+    left: 10px;
+    top: 0;
+}
+
+.banner__bowl{
+    position: absolute;
+    background-image: url(../img/bowl.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 100%;
+    width: 3.5%;
+    left: 21.2%;
+}
+
+.banner__star{
+    position: absolute;
+    left: 25.75%;
+    background-image: url(../img/star.png);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+    z-index: 2;
+    width: 1.78%;
+    height: 100%;
+    animation: star-animation 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.banner__star-2{
+    background-position: center 95px;
+    left: 30%;
+    /* transform: scale(0.8); */
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.banner__star-3{
+    background-position: center -3px;
+    left: 28.61%;
+    /* transform: scale(0.6); */
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes star-animation{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
+
+@keyframes star-animation-2{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.6);
+    }
+}
+
+.banner__victory{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30.3%;
+    background-image: url(../img/buttons-sprite-2.png);
+    /* background-size: 260px 360px; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 260px;
+    height: 100px;
+    animation: buttons-animation 3s steps(3) infinite;
+}
+
+@keyframes buttons-animation {
+    0% { background-position:    0 0; } 
+    100% { background-position: 0 -360px; }
+
+}
+.banner__iphone{
+    position: absolute;
+    background-image: url(../img/iphone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 100%;
+    width: 8.35%;
+    left: 47%;
+    animation: animation__iphone 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation__iphone{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.banner__phones{
+    position: absolute;
+    background-image: url(../img/phones.png);
+    background-position: center 5px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 100%;
+    width: 21%;
+    right: 23%;
+    animation: phones__animation 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes phones__animation{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.5);
+    }
+    30%{
+        transform: translate(2);
+    }
+    40%{
+        transform: translate(2.3);
+    }
+    50%{
+        transform: translate(2.5);
+        background: url(../img/opacity.png)
+    }
+    60%{
+        transform: translate(3);
+    }
+    70%{
+        transform: translate(2.5);
+    }
+    80%{
+        transform: translate(2);
+        background-image: url(../img/phones.png);
+    }
+    90%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.banner__star-right{
+    position: absolute;
+    right: 30%;
+    background-image: url(../img/star.png);
+    background-repeat: no-repeat;
+    background-position: center 18px;
+    z-index: 2;
+    width: 1.78%;
+    height: 100%;
+    animation: star-animation 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.banner__star-right-2{
+    right: 26%;
+    background-image: url(../img/star-rotate.png);
+    background-position: center 14px;
+}
+
+.banner__star-right-3{
+    right: 27.5%;
+    background-position: center 80px;
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.banner__qaxaqapet{
+    position: absolute;
+    right: 10.2%;
+    background-image: url(../img/qaxaqapet.png);
+    background-repeat: no-repeat;
+    background-position: center 18px;
+    z-index: 3;
+    width: 17.78%;
+    height: 100%;
+    animation: qaxaqapet-animation 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes qaxaqapet-animation{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.banner__right-bg{
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(123deg, transparent 35%, rgba(16, 57, 131, 0.8) 35.5%,
+  rgb(46, 59, 131)), url(../img/church.png);
+    background-position: center center, 250px top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 200px 200px;
+    z-index: 2;
+    width: 38%;
+    height: 100%;
+}
+
+.banner__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: block;
+    width: 147px;
+    height: 100%;
+    background-image: url(../img/button.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 5;
+}
+
+
+.right-1{
+    right: 2%;
+    background-position: center 2px;
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.right-2{    
+    right: 10%;
+    background-position: center 10px;
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.right-3{
+    right: 7%;
+    background-position: center 100px;
+    animation: star-animation-2 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.right-4{
+    background-image: url(../img/star-rotate.png);
+    right: 16%;
+    background-position: center 26px;
+
+}
+.right-5{
+    background-image: url(../img/star-rotate.png);
+    right: 17%;
+    background-position: center 52px;
+}
+
+.right-6{
+    background-image: url(../img/star-rotate.png);
+    right: 2%;
+    background-position: center 86px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .banner__logo{
+        width: 24%;
+    }
+
+    .banner__bowl{
+        width: 4.5%;
+        left: 25.2%;
+    }
+
+    .banner__star:first-child{
+        left: 22.75%;
+    }
+
+    .banner__iphone{
+        display: none;
+    }
+
+    .banner__phones{
+        width: 24%;
+        z-index: 1;
+    }
+
+    .banner__qaxaqapet{
+        width: 21.78%;
+        right: 11.2%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner__bowl{
+        display: none;
+    }
+    .banner__logo{
+        width: 286px;
+        left: 4px;
+    }
+    .banner__phones{
+        display: none;
+    }
+
+    .banner__iphone{
+        display: block;
+        animation: none;
+        width: 120px;
+        left: 53%; 
+    }
+
+    .banner__qaxaqapet{
+        width: 260px;
+        right: 7.2%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .banner__qaxaqapet{
+        display: none;
+    }
+    .banner__iphone{
+        display: none;
+    }
+    .banner__victory{
+        left: 39.3%;
+    }
+
+}
+
+@media only screen and (max-width: 745px) {
+    .banner__victory{
+        background: url(../img/buttons-sprite.png);
+        left: 36.7%;
+        top: 50%;
+        transform: translateY(-54%);
+
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .banner__victory{
+        left: 37.5%;
+        display: none;
+    }
+    .banner__right-bg{
+        width: 180px;
+    }
+
+    .banner__button{
+        background: url(../img/button-min.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        right: 5px;
+        
+    }
+
+    .banner__bowl{
+        display: block;
+        width: 52px;
+        left: 57.2%;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .banner__logo{
+        background: url(../img/logo-min.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        width: 180px;
+        left: 2px;
+    }
+
+    .banner__victory{
+        background: url(../img/buttons-sprite.png);
+        left: 26.7%;
+        top: 0;
+        top: 51px;
+    }
+
+    .banner__button{
+        right: -10px;
+    }
+    .banner__button{
+        background: url(../img/button-min.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        right: 2px;
+        
+    }
+    .banner__victory{
+        display: none;
+    }
+
+    .banner__bowl{
+        display: block;
+        width: 52px;
+        left: 48.2%;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .banner__bowl{
+        display: none;
+    }
+
+    .banner__victory{
+        display: none;
+    }
+
+    .banner__right-bg{
+        width: 50%;
+    }
+
+    .banner__button{
+        background: url(../img/button-min.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        right: 5px;
+        
+    }
+    .banner__star{
+        width: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+    .banner__victory{
+        display: none;
+    }
+
+    .banner__right-bg{
+        width: 180px;
+    }
+
+    .banner__button{
+        background: url(../img/button-min.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    .banner__star{
+        width: 40px;
+    }
+    .banner__star-3{
+        left: 34.61%;
+    }
+
+}
