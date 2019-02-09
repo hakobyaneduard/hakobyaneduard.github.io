@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compass</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="wrap">
+    <header class="header">
+        <a href="/" class="header__link-block">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="header__block">
+            <img class="header__img" src="img/aa_03.png" alt="person">
+            <div class="header__text">
+                Philip: EMA Sales (Mid Sales)
+                <span>
+                    (EMA - GBR - S8S1)
+                </span>
+            </div>
+            <a href="#" class="header__link">
+                <img src="img/rr.png" alt="" class="header__img">
+                <span>
+                    Logout
+                </span>
+            </a>
+        </div>
+    </header>
+    <section class="back">
+        <div class="back__block">
+            <div class="back__button-block">
+                <a href="#" class="back__button-link">
+                    <span class="back__icon"></span>
+                    <span class="back__text">Back to Priority List</span>
+                </a>
+            </div>
+        </div>
+        <h1 class="back__caption">
+            Prioritisation algorithm configuration
+        </h1>
+    </section>
+    <section class="property">
+        <div class="property__block">
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        Tasks
+                        <mark>
+                            Open Tasks
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        On Due Date
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        After Due Date
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Before Due Date
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        Billings
+                        <mark>
+                            Yoy Vs Target
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Plus or minus 50+%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Plus or minus 25-49%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Plus or minus 15-24%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Plus or minus -14%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        AG TRACKING
+                        <mark>
+                            BCV-TRACKING IN PLACE, BCV-AD YTD, BCV-SALES YTD
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Not tracking
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Yes Tracking Bcv Sales + Bcv Ad = 0
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        Yes Tracking Bcv Sales + Bcv Ad > 1
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        LIMIT CHANGE
+                        <mark>
+                            LIMIT CHANGE <=90 DAY CHANGE
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        50+%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        25-49%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        0-24%
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property__block">
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        Opportunities
+                        <mark>
+                            OPEN OPP/TRIGGERS
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        3+ opps/triggers
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        2 opps/triggers
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        1 opps/triggers
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        0 opps/triggers
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        Penetration/contact
+                        <mark>
+                            AD DAYS SINCE CONTACT
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        91+ days
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        80-90 days
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        31-79  days
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        0-30 days
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property__item">
+                <div class="property__item-caption">
+                    <span class="property__item-name">
+                        NEW NEWS
+                        <mark>
+                            -
+                        </mark>
+                    </span>
+                    <button class="property__item-button">
+                        <img src="img/right__corner.png" alt="">
+                    </button>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        1+ new news items
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property__slider">
+                    <span class="property__slider-text">
+                        0 new news items
+                    </span>
+                    <div class="property__slider-block">
+                        <div class="property__slider-range">
+                            <span class="property__slider-from">0</span>
+                            <input type="range" min="0" max="100" step="1" value="0">
+                            <span class="property__slider-to">100</span>
+                            <output class="output"></output>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/rangeslider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
