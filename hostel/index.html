@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hostel</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <header class="header">
@@ -88,6 +90,12 @@
         <br>
         <span>LOREM ISPUM LPREM ISPUM</span>
     </h1>
+    <div class="order__calendar">
+        <label for="from">From</label>
+        <input class="input__from" type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to">
+    </div>
     <!-- /.title -->
 </section>
 <!-- /.order -->
@@ -256,7 +264,43 @@
 <!-- /.footer -->
 
 
+
+
 <script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        var dateFormat = "mm/dd/yy",
+            from = $( "#from" )
+                .datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 3
+                })
+                .on( "change", function() {
+                    to.datepicker( "option", "minDate", getDate( this ) );
+                }),
+            to = $( "#to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3
+            })
+                .on( "change", function() {
+                    from.datepicker( "option", "maxDate", getDate( this ) );
+                });
+
+        function getDate( element ) {
+            var date;
+            try {
+                date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+                date = null;
+            }
+
+            return date;
+        }
+    } );
+</script>
 <script src="js/script.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 </body>
