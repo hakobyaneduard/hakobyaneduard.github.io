@@ -1,0 +1,332 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.polaroid__camera-bg{
+    background-image: url(../img/camera.png);
+    width: 567px;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/*.buttons{*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*padding-top: 30vh;*/
+/*}*/
+
+.buttons a{
+    margin-right: 10px;
+}
+
+.btn__photo{
+    display: block;
+    width: 60px;
+	height: 60px;
+	/*background: #e51901;*/
+	border-radius: 50%;
+	/*border: 3px solid #f4eeed;*/
+	/*box-shadow: -1px 1px 2px #9c9b8f;*/
+    box-shadow: -1px 1px 2px #9c9b8f, inset 0 0 2px #000000;
+    
+    cursor: pointer;
+
+
+    background-image: url("../img/new__shutter.png");
+    background-size: 120% 120%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: 1;
+    top: 229px;
+    left: 8.2%;
+}
+
+.btn__photo:active{
+    box-shadow: -1px 1px 2px #9c9b8f, inset 0 0 8px #541e1c;
+}
+
+.btn__turn {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+
+
+    background: url("../img/turn-on.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 1px -1px 2px rgba(0, 0, 0, .5);
+
+    position: absolute;
+    top: 44px;
+    left: 28.4%;
+}
+
+
+.btn__turn:active{
+    /*box-shadow: inset 0 0 8px rgba(0, 0, 0, .5);*/
+    box-shadow: inset 0 0 2px #ffffff;
+}
+
+
+.btn__zoom{
+    display: flex;
+    width: 55px;
+    height: 26px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*overflow: hidden;*/
+
+    background-image: url("../img/Lighten_Darken_control.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.btn__zoom-change{
+    position: absolute;
+    z-index: 2;
+    width: 23px;
+    border-radius: 50%;
+    height: 100%;
+
+    background-image: url("../img/lighten-_darken_control_circle.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    left: 49%;
+    transform: translate(-50%);
+}
+
+.btn__zoom-change-left, .btn__zoom-change-right, .btn__zoom-change-center{
+    /*position: absolute;*/
+    height: 100%;
+    width: 33%;
+    cursor: pointer;
+    /*background: red;*/
+}
+
+.btn__zoom-block{
+    position: absolute;
+    right: 71px;
+    top: 149px;
+}
+
+.camera__view{
+    position: absolute;
+    right: 7.2%;
+    top: 29px;
+}
+
+.camera__view img{
+    width: 118px;
+}
+
+/* Flash */
+
+.lighten__block{
+    position: absolute;
+    width: 100px;
+    height: 167px;
+
+    background: url("../img/flash.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    top: 36px;
+    left: 8.1%;
+}
+
+#shutter {
+    opacity: 0;
+    transition: all 60ms ease-in;
+    position: absolute;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+
+    background-color: rgba(255, 255, 255, .5);
+
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+#shutter.on {
+    opacity: 1;
+    z-index: 1;
+    height: 90%;
+    width: 81%;
+    border-radius: 20px;
+}
+
+.canvas__block{
+    perspective: 1075px;
+    margin-top: 296px;
+
+    overflow-y: hidden;
+}
+
+.canvas-item{
+    width: 336px;
+    height: 403px;
+    background: #ffffff;
+
+    margin: 0 auto;
+
+    padding-top: 30px;
+    padding-bottom: calc(403px - 267px);
+
+
+    box-shadow: 0 0 5px #000000;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) translateY(-400px);
+    transform-origin: center top;
+
+    /*animation-name: animation__come-photo;*/
+    /*animation-duration: 3000ms;*/
+    /*animation-timing-function: ease-in;*/
+    /*animation-fill-mode: forwards;*/
+
+    transform-origin: center top;
+
+    position: relative;
+
+    overflow-y: hidden;
+
+    /*transition: all 1000ms;*/
+}
+
+.canvas__item-opacity{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 130.1%;
+    /*top: 0;*/
+    /*left: 0;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background: #000000;*/
+    background-image: linear-gradient(#000000, #130F40);
+    box-shadow: 0 0 5px #000000;
+    clip-path: polygon(50% 0%, 100% 0, 98% 60%, 95% 100%, 5% 100%, 2% 60%, 0 0);
+
+    transform: translateZ(30px);
+
+    /*animation-name: canvas__item-opacity-animation;*/
+    /*animation-duration: 2000ms;*/
+    /*animation-timing-function: linear;*/
+    /*animation-fill-mode: forwards;*/
+}
+
+.canvas__item-opacity-animation{
+    animation-name: canvas__item-opacity-animation;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes canvas__item-opacity-animation {
+    0%{
+        transform: translateZ(30px);
+    }
+
+    20%{
+        transform: translateZ(30px) translateY(-50px);
+    }
+    40%{
+        transform: translateZ(30px) translateY(-150px);
+    }
+    60%{
+        transform: translateZ(30px) translateY(-350px);
+    }
+    80%{
+        transform: translateZ(30px) translateY(-450px);
+    }
+    100%{
+        transform: translateZ(30px) translateY(-550px);
+    }
+}
+
+.canvas__item-animation{
+    animation-name: animation__come-photo;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+/*.canvas__item-come{*/
+    /*!*transform: translateZ(100px) rotateX(87deg);*!*/
+    /*!*transition: transform 2000ms;*!*/
+
+    /*animation-name: animation__come-photo;*/
+    /*animation-duration: 3000ms;*/
+    /*animation-timing-function: linear;*/
+
+/*}*/
+
+
+/*.canvas__item-show{*/
+    /*!*transform: translateZ(100px) rotateX(0deg);*!*/
+    /*!*!*transform-origin: center top;*!*/
+    /*!*transition: transform 1000ms;*!*/
+
+    /*animation-name: animation__come-photo;*/
+    /*animation-duration: 3000ms;*/
+    /*animation-timing-function: linear;*/
+
+/*}*/
+
+@keyframes animation__come-photo {
+    0%{
+        transform: rotateX(68.02deg) translateY(-400px);
+    }
+    100%{
+        transform: rotateX(54.02deg) translateY(-10px);
+    }
+}
+
+.canvas-item canvas{
+    max-width: 297px;
+    max-height: 297px;
+
+    box-shadow: 0 0 2px #000;
+}
+
+
+video{
+    width: 100px;
+    height: 100px;
+    display: block;
+
+    opacity: 0;
+}
+
+canvas{
+    /*margin: 0 auto;*/
+}
+
