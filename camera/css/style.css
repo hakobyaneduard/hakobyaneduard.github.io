@@ -8,7 +8,7 @@ body{
 }
 
 .polaroid__camera-bg{
-    background-image: url(../img/camera.png);
+    background-image: url(../img/camera-bg.png);
     width: 567px;
     height: 500px;
     background-size: 100%;
