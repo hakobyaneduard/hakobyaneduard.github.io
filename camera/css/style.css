@@ -279,27 +279,6 @@ body{
     animation-fill-mode: forwards;
 }
 
-/*.canvas__item-come{*/
-    /*!*transform: translateZ(100px) rotateX(87deg);*!*/
-    /*!*transition: transform 2000ms;*!*/
-
-    /*animation-name: animation__come-photo;*/
-    /*animation-duration: 3000ms;*/
-    /*animation-timing-function: linear;*/
-
-/*}*/
-
-
-/*.canvas__item-show{*/
-    /*!*transform: translateZ(100px) rotateX(0deg);*!*/
-    /*!*!*transform-origin: center top;*!*/
-    /*!*transition: transform 1000ms;*!*/
-
-    /*animation-name: animation__come-photo;*/
-    /*animation-duration: 3000ms;*/
-    /*animation-timing-function: linear;*/
-
-/*}*/
 
 @keyframes animation__come-photo {
     0%{
