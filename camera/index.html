@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polaroid Camera</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+    <div class="polaroid__camera-bg">
+
+        <a href="#" class="btn__photo" id="btn-photo"></a>
+
+        <a href="#" class="btn__turn"></a>
+
+        <div class="btn__zoom-block">
+            <div class="btn__zoom">
+                <span id="zoom-left-btn" class="btn__zoom-change-left"></span>
+                <span id="zoom-center-btn" class="btn__zoom-change-center"></span>
+                <span class="btn__zoom-change"></span>
+                <span id="zoom-right-btn" class="btn__zoom-change-right"></span>
+            </div>
+        </div>
+
+        <div class="lighten__block">
+            <div id="shutter"></div>
+        </div>
+
+        <div class="camera__view">
+            <img src="img/viewfinder-window.png" alt="">
+        </div>
+
+
+        <video id="video" width="297" height="297" autoplay></video>
+        <div class="canvas__block">
+            <div class="canvas-item" id="canvas-item-transform">
+                <div class="canvas__item-opacity" id="canvas-item-opacity"></div>
+                <canvas class="canvas-filter" id="canvas" width="297" height="297"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
