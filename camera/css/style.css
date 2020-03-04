@@ -19,12 +19,6 @@ body{
     position: relative;
 }
 
-/*.buttons{*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*padding-top: 30vh;*/
-/*}*/
 
 .buttons a{
     margin-right: 10px;
@@ -305,7 +299,4 @@ video{
     opacity: 0;
 }
 
-canvas{
-    /*margin: 0 auto;*/
-}
 
