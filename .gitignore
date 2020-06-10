@@ -7,7 +7,6 @@
 *.psd
 *.sublime*
 package.json
-css/
 projects/
 node_modules/
 npm-debug.*

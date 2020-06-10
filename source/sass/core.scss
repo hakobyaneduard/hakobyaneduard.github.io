@@ -1,18 +1,18 @@
-.wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
+.wrapper-outer {
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 
-  background: linear-gradient(180deg, #000428 0%, #054277 100%);
+  background-color: rgba(16, 14, 23, 1);
+}
+
+.wrapper {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
 
 .img-container {
@@ -25,4 +25,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  width: 84.2%;
+  margin: 0 auto;
 }
