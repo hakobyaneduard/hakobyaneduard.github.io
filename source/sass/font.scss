@@ -9,6 +9,15 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Roboto-Black.woff") format("woff"),
+  url("../fonts/Roboto-Black.ttf")  format("truetype"),
+  url("../fonts/Roboto-Black.svg#Roboto-Black") format("svg");
+  font-weight: 900;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
