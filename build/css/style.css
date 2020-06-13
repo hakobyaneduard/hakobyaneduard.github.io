@@ -562,7 +562,6 @@ html.active {
     position: fixed;
     right: 0;
     bottom: 0;
-    overflow-y: auto;
     -webkit-transition: 500ms;
     transition: 500ms;
   }
@@ -587,13 +586,8 @@ html.active {
 
   .nav::after {
     bottom: 0;
-    -webkit-transition-delay: 150ms;
-    transition-delay: 150ms;
-  }
-
-  .nav.active {
-    -webkit-transition-delay: 500ms;
-    transition-delay: 500ms;
+    -webkit-transition-delay: 50ms;
+    transition-delay: 50ms;
   }
 
   .nav.active,
@@ -603,9 +597,10 @@ html.active {
     transform: translateX(0);
   }
 
+  .nav.active,
   .nav.active::after {
-    -webkit-transition-delay: 600ms;
-    transition-delay: 600ms;
+    -webkit-transition-delay: 500ms;
+    transition-delay: 500ms;
   }
 
   .nav.active .nav-list {
@@ -625,7 +620,9 @@ html.active {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    overflow-y: auto;
     height: 100%;
+    max-height: 100%;
     width: 100%;
     opacity: 0;
     -webkit-transition-delay: unset;
@@ -694,6 +691,23 @@ html.active {
 
   .resume-btn {
     display: none;
+  }
+}
+
+@media (max-width:480px) {
+  .nav-link {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-height:667px) {
+  .nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav-link {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

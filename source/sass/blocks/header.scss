@@ -238,7 +238,6 @@
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
-    overflow-y: auto;
     transition: 500ms;
 
     &::before,
@@ -261,7 +260,7 @@
 
     &::after {
       bottom: 0;
-      transition-delay: 150ms;
+      transition-delay: 50ms;
     }
   }
 
@@ -275,7 +274,7 @@
 
     &::after {
       transform: translateX(0);
-      transition-delay: 600ms;
+      transition-delay: 500ms;
     }
 
     .nav-list {
@@ -289,7 +288,9 @@
     align-items: center;
     justify-content: center;
 
+    overflow-y: auto;
     height: 100%;
+    max-height: 100%;
     width: 100%;
 
     opacity: 0;
@@ -349,5 +350,23 @@
 
   .resume-btn {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 2.2rem;
+  }
+}
+
+//media with height
+@media (max-height: 667px) {
+  .nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav-link {
+    font-size: 2rem;
   }
 }
